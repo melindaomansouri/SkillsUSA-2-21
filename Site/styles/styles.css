@@ -1,0 +1,69 @@
+header {
+    background-color: #17AAAA;
+    height: 10%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: sticky;
+    padding: 5px;
+    margin: 5px;
+}
+
+#nav-icon {
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 22px;
+    width: 40px;
+    transition: 2s;
+}
+
+#nav-link {
+    transition: left 2s;
+}
+
+#menu {
+    width: 0;
+    position: fixed;
+    background-color: A2A2A2;
+    height: 100%;
+    left: -40%;
+    transition: left 2s;
+    z-index: 1;
+}
+
+h1#header {
+    position: relative;
+    text-align: center;
+}
+
+#header-filler {
+    height: 10%;
+    width: 100%;
+    float: left;
+}
+
+.slidein {
+    position: absolute;
+    left: -120px;
+    transition: left 2s;
+}
+
+div.slidein:hover {
+    left: 5000px;
+}
+
+footer {
+    background-color: #BD3434;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+}
+
+#footer-title {
+    position: absolute;
+    align-content: center;
+}
