@@ -1,3 +1,6 @@
+#main {
+    transition: margin-left 2s;
+}
 header {
     background-color: #17AAAA;
     height: 10%;
@@ -13,9 +16,18 @@ header {
     position: relative;
     float: left;
     left: 20px;
-    top: 22px;
+    top: 20px;
     width: 40px;
-    transition: 2s;
+    transition: 0.5s;
+}
+
+#nav-button {
+    position: relative;
+    float: left;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    transition: 0.5s;
 }
 
 #nav-link {
@@ -23,34 +35,34 @@ header {
 }
 
 #menu {
-    width: 0;
+    width: 30%;
     position: fixed;
-    background-color: A2A2A2;
+    background-color: #A2A2A2;
     height: 100%;
-    left: -40%;
+    left: -30%;
     transition: left 2s;
     z-index: 1;
+    transition: 0.5s;
 }
+
 
 h1#header {
     position: relative;
     text-align: center;
 }
 
-#header-filler {
-    height: 10%;
-    width: 100%;
-    float: left;
+main {
+    padding: 20px;
 }
 
 .slidein {
     position: absolute;
-    left: -120px;
+    left: -300px;
     transition: left 2s;
 }
 
 div.slidein:hover {
-    left: 5000px;
+    left: 50px;
 }
 
 footer {
@@ -61,9 +73,9 @@ footer {
     left: 0px;
     bottom: 0px;
     text-align: center;
+    z-index: -1;
 }
 
 #footer-title {
-    position: absolute;
     align-content: center;
 }

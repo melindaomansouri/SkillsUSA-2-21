@@ -6,27 +6,37 @@
 </head>
 <body>
     <nav id="menu">
-    ahhhhhhhhhhhhhhhhhhhhh
+        <span onclick="closeNav()">Close</span>
+    <a src=""></a>
     </nav>
     <div id="main">
     <header>
-        <span onclick="openNav"><img src="images/menu_bars.png" id="nav-icon" /></span>
+        <img src="images/menu_bars.png" id="nav-icon" onclick="openNav()" />
         <h1 id="header">Toothpaste</h1>
     </header>
-    <div id="header-filler"></div>
-    
     <main>
-    
-        <div class="slidein"><img src="" ></div>
+        <section>
+        <div class="slidein">
+            <img src="images/Toothpaste_trace.png" style="width: 450px"/>
+        </div>
+        </section>
+        <section>
+        <div class="slidein">
+            <img src="images/toothbrush_trace.png" style="width: 75%"/>
+        </div>
+        </section>
     </main>
     <footer>
-        <h2 id=footer-title>&copy;Toothpaste 2021</h2>
+        <h2 id=footer-title style="background-color: #BD3434">&copy;Toothpaste 2021</h2>
     </footer>
     </div>
     <script>
         function openNav() {
-            document.getElementById("menu").style.width = "40%";
-            document.getElementById("main").style.marginLeft = "40%";
+            document.getElementById("menu").style.left = "0";
+        }
+        
+        function closeNav () {
+            document.getElementById("menu").style.left = "-30%";
         }
     </script>
 </body>
